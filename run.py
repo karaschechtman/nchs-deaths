@@ -1,5 +1,6 @@
 import boto3
 import requests
+import os
 from datetime import datetime
 
 # Get the data
@@ -7,9 +8,11 @@ URL = "https://data.cdc.gov/api/views/r8kw-7aab/rows.csv?accessType=DOWNLOAD"
 data = requests.get(URL).content
 
 # Upload to s3
-f = open("key.txt","r")
-keys = f.readlines()
-f.close()
+keys = None
+try:
+	keys = os.environ["S3"]
+except KeyError:
+	keys = ["IDK","IDK"]
 
 session = boto3.Session(
 	aws_access_key_id=keys[0].strip(),
