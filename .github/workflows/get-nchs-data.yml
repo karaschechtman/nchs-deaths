@@ -23,5 +23,5 @@ jobs:
 
 			- name: execute py script
 			  env: 
-				S3: ${{ secrets.S3  }}
+				S3: ${{ secrets.S3 }}
 			  run: python run.py
