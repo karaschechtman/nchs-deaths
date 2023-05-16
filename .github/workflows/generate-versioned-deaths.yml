@@ -1,8 +1,8 @@
-name: get-nchs-data
-run-name: Get NCHS data run no. ${{ github.run_number }}$
+name: generate-versioned-deaths
+run-name: Generate versioned deaths data run no. ${{ github.run_number }}$
 on:
 	schedule:
-		- cron: '0 0 * * *'
+		- cron: '30 0 * * *'
 
 jobs:
 	build:
@@ -24,4 +24,5 @@ jobs:
 			- name: execute py script
 			  env: 
 				S3: ${{ secrets.S3 }}
-			  run: python get_nchs_data.py
+			  run: python generate_versioned_deaths.py
+
