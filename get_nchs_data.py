@@ -8,14 +8,9 @@ URL = "https://data.cdc.gov/api/views/r8kw-7aab/rows.csv?accessType=DOWNLOAD"
 data = requests.get(URL).content
 
 # Upload to s3
-keys = None
-try:
-	keys = os.environ["S3"]
-except KeyError:
-	keys = ["IDK","IDK"]
-
+keys = os.environ["S3"].splitlines()
 session = boto3.Session(
-	aws_access_key_id=keys[0].strip(),
+	aws_access_key_id=keys.[0].strip(),
 	aws_secret_access_key=keys[1].strip()
 )
 
