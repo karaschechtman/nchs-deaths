@@ -1,5 +1,5 @@
 requests
 boto3
 jupyter
-pd
+pandas
 tqdm
