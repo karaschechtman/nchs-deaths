@@ -5,11 +5,7 @@ from datetime import datetime
 from io import StringIO
 
 # Connect to s3
-keys = None
-try:
-	keys = os.environ["S3"]
-except KeyError:
-	keys = ["IDK","IDK"]
+keys = os.environ["S3"].readlines()
 
 session = boto3.Session(
     aws_access_key_id=keys[0],
