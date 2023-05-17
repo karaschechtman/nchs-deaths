@@ -1,8 +1,6 @@
 name: generate-versioned-deaths
 run-name: Generate versioned deaths data run no. ${{ github.run_number }}$
-on:
-  schedule:
-    - cron: '30 0 * * *'
+on: workflow_dispatch
 
 jobs:
   build:
