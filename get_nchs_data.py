@@ -10,7 +10,7 @@ data = requests.get(URL).content
 # Upload to s3
 keys = os.environ["S3"].splitlines()
 session = boto3.Session(
-	aws_access_key_id=keys.[0].strip(),
+	aws_access_key_id=keys[0].strip(),
 	aws_secret_access_key=keys[1].strip()
 )
 
