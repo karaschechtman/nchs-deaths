@@ -5,7 +5,7 @@ from datetime import datetime
 from io import StringIO
 
 # Connect to s3
-keys = os.environ["S3"].readlines()
+keys = os.environ["S3"].splitlines()
 
 session = boto3.Session(
     aws_access_key_id=keys[0],
