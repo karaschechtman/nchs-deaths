@@ -1,6 +1,8 @@
 name: get-nchs-data
 run-name: Get NCHS data run no. ${{ github.run_number }}$
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
