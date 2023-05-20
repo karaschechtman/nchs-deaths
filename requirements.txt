@@ -1,5 +1,6 @@
-requests
 boto3
 jupyter
+numpy
 pandas
+requests
 tqdm
