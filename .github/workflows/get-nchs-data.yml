@@ -1,5 +1,5 @@
 name: get-nchs-data
-run-name: Get NCHS data run no. ${{ github.run_number }}$
+run-name: Get NCHS data run no. ${{ github.run_number }}
 on:
   schedule:
     - cron: '0 0 * * *'
@@ -23,5 +23,6 @@ jobs:
 
       - name: execute py script
         env: 
-          S3: ${{ secrets.S3 }}
+          S3_KEY: ${{ secrets.S3_KEY }}
+          S3_PRIVATE_KEY: ${{ secrets.S3_PRIVATE_KEY}}
         run: python get_nchs_data.py
