@@ -10,4 +10,4 @@ Scripts to generate versioned NCHS COVID-19 death data and notebook for analysis
 - `generate_versioned_deaths.py`: Daily process that generates a file with versioned weekly deaths by date of death
 
 ## Notebooks
-- `nchs_deaths.ipynb`: Analysis of versioned percent of total deaths that are COVID-19 associated deaths
+- `percent_covid_associated_deaths.ipynb`: Analysis of versioned percent of total deaths that are COVID-19 associated deaths
