@@ -1,3 +1,5 @@
+altair
+altair_viewer
 boto3
 jupyter
 numpy
