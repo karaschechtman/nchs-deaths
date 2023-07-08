@@ -1,6 +1,6 @@
 # Info
 
-Scripts to generate versioned NCHS COVID-19 death data and notebook for analysis of NCHS data's use in the new CDC COVID-19 dashboard following expiry of the PHE. Further details and background can be found in the review document [here](https://docs.google.com/document/d/18pxZ0pyAc7TE7ig4KQkShqcokhlaqzVJ-_6d9Rn1dzo/edit). 
+Scripts to generate versioned NCHS COVID-19 death data and notebook for analysis of NCHS data's use in the new CDC COVID-19 dashboard following expiry of the PHE. Further details and background can be found in the review document [here](https://docs.google.com/document/d/e/2PACX-1vS3QT5AzW28tmqyMJtXIpYbFewJilLIPg7YbXwMDne3ql8HY9UTN0PxAUxMNwJk3WD_f3uN3DJj4nEE/pub). 
 
 # Contents
 
